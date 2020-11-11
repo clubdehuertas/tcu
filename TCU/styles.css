@@ -1,0 +1,18 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  padding-top: 5rem;
+}
+img{
+  height: 400px;
+  width: 400px;
+  margin: 10 auto;
+}
+p{
+  font-size: 1.2rem;
+}
+.navbar{
+  background-color: green;
+}
+h2{
+  font-size: 5rem;
+}

@@ -1,0 +1,55 @@
+h1{
+  text-align: center;
+  color: white;
+  font-family: fantasy;
+  fo
+}
+h2{
+  text-align: center;
+  display: block;
+}
+body {
+  background-color: #E5E4D7;
+}
+img{
+  display:none;
+  border: 1px solid black;
+}
+canvas{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: auto;
+  background-image: url(images/fondo.png);
+  text-align: center;
+}
+#instrucciones{
+  text-align: center;
+}
+.score{
+  margin-bottom: 1rem;
+}
+.resultado{
+  text-align: center;
+}
+.hidden{
+  display: none;
+}
+
+#gameScreen{
+  border: 3px solid black;
+}
+.container-fluid{
+  background-color: #2e8b57;
+  padding: 6px;
+  margin-bottom: 1%;
+
+}
+#lives{
+  float: left;
+  margin-left: 30%;
+}
+#points{
+  float:right;
+  margin-right: 31%;
+}
