@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" type="image/png" href="images/icon.png" />
+
+  <title>Trivia</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+  <!-- Custom styles for this template -->
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-green">
+      <a class="navbar-brand" href="#">Trivia de energia renovable</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <!--
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          -->
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Begin page content -->
+  <main role="main" class="container">
+    <h1 class="mt-5">Carga la bateria de los paneles solares</h1>
+    <p class="lead">Contesta las preguntas sobre energía renovable correctamente para cargar la bateria.</p>
+
+  </main>
+
+<div class="imagenes">
+  <img src="images/bat1.png" id="bat1">
+  <img src="images/bat2.png" id="bat2">
+  <img src="images/bat3.png" id="bat3">
+  <img src="images/bat4.png" id="bat4">
+
+
+</div>
+  <div id="separator">
+    <div class="left-half">
+      <canvas id="gameScreen" width="500" height="500"></canvas>
+    </div>
+
+    <div class="right-half">
+
+
+      <div id="container">
+
+        <div id="start"><span id="centrar">Empezar trivia</span></div>
+
+        <div id="quiz" style="display: none">
+
+          <div id="question"></div>
+
+          <div id="choices">
+
+            <button type="button" class="btn btn-lg btn-outline-dark" id="A" onclick="checkAnswer('A')"></button>
+            <button type="button" class="btn btn-lg btn-outline-dark choice" id="B" onclick="checkAnswer('B')"></button>
+            <button type="button" class="btn btn-lg btn-outline-dark choice" id="C" onclick="checkAnswer('C')"></button>
+
+          </div>
+
+          <div id="timer">
+
+            <div id="counter"></div>
+
+            <div id="btimeGauge"></div>
+
+            <div id="timeGauge"></div>
+
+          </div>
+
+          <div id="progress"></div>
+
+        </div>
+
+        <div id="scoreContainer" style="display: none"></div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">Club de huertas/TCU-708</span>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+  </script>
+  <script src="../../assets/js/vendor/popper.min.js"></script>
+  <script src="../../dist/js/bootstrap.min.js"></script>
+  <script src="game.js"></script>
+</body>
+
+</html>
+
+
+</html>
